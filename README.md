@@ -22,7 +22,7 @@ explanations is complete yet, and nothing has been refereed.
 
 The details, source by source and dated:
 [`literature/state-of-understanding.md`](literature/state-of-understanding.md)
-and [`literature/tracker.md`](literature/tracker.md).
+and [`literature/README.md`](literature/README.md).
 
 ## What's in this repository
 

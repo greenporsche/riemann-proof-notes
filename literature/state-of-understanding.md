@@ -1,7 +1,7 @@
 # State of understanding
 
 What is known about the proof as of **2026-11-23 (UTC)**, and what is open.
-Every line points to an entry in `tracker.md`.
+Every line points to an entry in `README.md`, the source tracker in this folder.
 
 ## In one paragraph
 

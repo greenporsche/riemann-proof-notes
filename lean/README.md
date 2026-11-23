@@ -13,7 +13,7 @@ tar -xzf lean.tar.gz
 
 Our copy (fetched 2026-11-23 UTC): 239,275,554 bytes, SHA-256 as above,
 matching the hashes published by Rubinstein, Sutherland and Arledge
-(`literature/tracker.md`, V2–V4). Unpacked: 175,187 `.lean` files under
+(`literature/README.md`, V2–V4). Unpacked: 175,187 `.lean` files under
 `lean/src/`, about 1.3 GB, toolchain `leanprover/lean4:v4.33.1`.
 `lean/src/Main.lean` is byte-identical to the pinned mirror's
 (`leanprover-community/riemann-hypothesis` at `40e56bab`).
