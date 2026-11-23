@@ -4,7 +4,7 @@ I'm teaching myself how Levent Alpöge's proof of the Riemann hypothesis
 works. These notes follow the questions I run into, the ideas I learn along
 the way, and the parts I can now explain. Each chapter comes with a video.
 Together they're meant to add up to a self-created-self-study course on the proof, starting from
-high-school maths.
+high-school math.
 
 ## Chapters
 
