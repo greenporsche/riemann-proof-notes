@@ -1,0 +1,15 @@
+.cache/
+node_modules/
+.DS_Store
+
+# captured third-party sources: kept locally for provenance, not redistributed.
+# literature/sources/SHA256SUMS and ACCESSED.txt identify each capture.
+literature/sources/*
+!literature/sources/SHA256SUMS
+!literature/sources/ACCESSED.txt
+
+# Alpöge's Lean archive: local copy for reading, not redistributed
+lean/archive/
+
+concept-maps/
+videos/
