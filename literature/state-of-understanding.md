@@ -1,6 +1,6 @@
 # State of understanding
 
-What is known about the proof as of **2026-11-23 (UTC)**, and what is open.
+What is known about the proof as of **2026-11-24 (UTC)**, and what is open.
 Every line points to an entry in `README.md`, the source tracker in this folder.
 
 ## In one paragraph
@@ -8,13 +8,14 @@ Every line points to an entry in `README.md`, the source tracker in this folder.
 On 20 November 2026 Levent Alpöge, working with Claude, released a formal
 proof in Lean of the Riemann hypothesis and of the generalised Riemann
 hypothesis for Dirichlet L-functions (A1). Within a day, independent proof
-checkers accepted it, and the Lean and Mathlib communities certified that the
+checkers accepted it, and the Lean FRO and the Mathlib Initiative certified that the
 theorem proved is exactly Mathlib's statement of RH (V1–V5). Alpöge released
 the Lean formalization, not a written proof (A1). The explanations tracked here
 (E1–E4) cover parts of the argument, including a reduction of the main
 inequality to stated inputs (E1), and each says how far it goes. The Clay
-Institute still lists the problem as unsolved (O1), and none of the material
-tracked here has been refereed.
+Institute now labels the problem “Active” (O1). The tracked sources report no prize decision or refereed publication.
+
+The 24 November MIT log reports that both Lean kernels accepted the original full export and that standalone Comparator v4.33.0 passed. New proof-reading studies use a recorded commit on the community’s cleaned `main`. [Sutherland’s verification log](https://math.mit.edu/~drew/grh/)
 
 ## Done
 

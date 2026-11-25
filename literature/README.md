@@ -11,7 +11,9 @@ Status words used here:
 - **explained**: a human-readable account exists, saying how far it goes;
 - **refereed**: accepted by a journal after peer review. Nothing below is refereed yet.
 
-Last updated: 2026-11-23 (UTC).
+Last updated: 2026-11-24 (UTC).
+
+On 24 November the release archive, both Waterloo drafts and four other PDFs were compared again with their published versions, and all matched.
 
 ## The announcement
 
@@ -32,7 +34,7 @@ Last updated: 2026-11-23 (UTC).
 
 ## Verification of the formal proof (machine checks)
 
-### V1. Lean and Mathlib communities, joint statement, 21 Nov 2026 13:55
+### V1. Lean FRO and Mathlib Initiative, joint statement, 21 Nov 2026 13:55
 - **Link:** https://leanprover-community.github.io/blog/posts/riemann-hypothesis/
   · copy: `sources/lean-mathlib-statement/post.html`
 - **Shows:** "We hereby certify that both the statement and the proof of the
@@ -44,13 +46,13 @@ Last updated: 2026-11-23 (UTC).
   attributes the set-theoretic soundness proofs to con-leche and con-ron: they
   "come with a formal proof, relative to set theory, that they cannot accept a
   false proof".
-  Endorsed by the Lean FRO and the Mathlib Initiative.
+  The updated byline names the Lean FRO and the Mathlib Initiative as joint authors.
 - **Says it does not show:** anything about human understanding. It "look[s]
   forward to all the activity in the mathematical community that will help
   explain the new ideas in this proof."
 - **Read:** in full.
 
-### V2. Sutherland (MIT), verification log, updated 22 Nov 2026 16:20 UTC
+### V2. Sutherland (MIT), verification log, updated 24 Nov 2026 05:25 UTC
 - **Link:** https://math.mit.edu/~drew/grh/ · copy: `sources/sutherland-log/index.html`
 - **Shows:** checks "run with Claude Code". For the main proof: all 175,187
   modules compile; `#print axioms` gives only `propext`, `Classical.choice`,
@@ -59,9 +61,7 @@ Last updated: 2026-11-23 (UTC).
   proof"; con-leche and con-ron matched all five theorems against the
   statements; lean4lean accepted every compiled module; an independent sandboxed
   rebuild reproduced the export byte for byte.
-- **Pending at capture:** "The lake comparator run and the Lean-kernel replay
-  of the export are still in progress". The Comparator passes further down the page are for a separate
-  development, "Robin1984 on its own", not the main proof.
+- **24 November update:** Lean’s default and paranoid kernels accepted the full original export. Standalone Comparator v4.33.0 passed against the archive’s challenge using the original build files. The separate v4.36.0 run with the canonical challenge had passed its paranoid and nanoda stages. Its default-kernel stage was still running.
 - Also documents a harmless non-determinism in one compiled module (a
   bound-variable name, Lean issue #15498).
 - **Scope:** RH and GRH for Dirichlet L-functions (five theorems). "Dedekind zeta
@@ -99,8 +99,8 @@ Last updated: 2026-11-23 (UTC).
   although we captured it on 23 Nov. Recheck it before citing the dashboard.
 - **Read:** front page only.
 
-Also listed by Rubinstein, not yet read: a full kernel replay attributed to
-Simon DeDeo (https://photos.proofsandreasons.io/wright/alp-replay.json).
+The Waterloo index on 23 November linked a full kernel replay attributed to
+Simon DeDeo (https://photos.proofsandreasons.io/wright/alp-replay.json). The 24 November index omits the link.
 
 ## Explanations (human-readable accounts)
 
@@ -164,19 +164,17 @@ Simon DeDeo (https://photos.proofsandreasons.io/wright/alp-replay.json).
   square-root upper bound on a smoothed prime sum, on sparse long intervals; a
   localised Landau theorem turning it into a zero-free half-plane; functional
   equations carrying that to the critical line. A flow diagram marks which
-  implications are machine-checked. The site also has two "deformalization"
+  implications are machine-checked. The site also has three "deformalization"
   notes that rewrite clusters of the Lean code as ordinary mathematics with full
   proofs, an atlas, a blueprint and a "book".
-- **Read:** first page.
+- **24 November addition:** the [third note](https://nasqret.github.io/riemann-rev/digests/layer-descent.pdf) treats descent to a layer of the cyclotomic tower and includes a concordance to 70 Lean declarations.
+- **Read:** first page of the architecture guide and the updated index.
 
 ## Official status
 
 ### O1. Clay Mathematics Institute, Millennium Prize page
 - **Link:** https://www.claymath.org/millennium/riemann-hypothesis/ · copy: `sources/clay/riemann-hypothesis.html`
-- **Shows:** labelled "Unsolved" at capture (2026-11-23 07:48 UTC). No mention of
-  the announcement. (Clay's rules require publication in a refereed venue and a
-  waiting period before any prize decision. **Unsourced here: add the rules page
-  before we state this.**)
+- **Page label:** “Unsolved” in the 23 November capture and “Active” on 24 November. The page gives no prize decision.
 
 ## The formal proof itself
 
@@ -187,6 +185,7 @@ Simon DeDeo (https://photos.proofsandreasons.io/wright/alp-replay.json).
   pinned commit `40e56bab026552e089d7afcfeff08d2defb9c005`.
   [`src/Main.lean`](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean)
   (12 lines) is captured at `sources/lean-mirror/Main.lean`.
+- The 24 November reading pin on community `main` is [`9282d3a1`](https://github.com/leanprover-community/riemann-hypothesis/blob/9282d3a102c4aff0e6026746db2a8990f5d9cddd/src/Main.lean). New studies should record their commit and follow the proof bodies from their target theorem.
 - `Main.lean` states five theorems: `riemannHypothesis : RiemannHypothesis`,
   `riemannZeta_eq_zero_re`, `LFunction_ne_zero_of_half_lt_re`,
   `LFunction_eq_zero_re`, `LFunction_eq_zero_re_of_isPrimitive`.

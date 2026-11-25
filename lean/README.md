@@ -18,5 +18,6 @@ matching the hashes published by Rubinstein, Sutherland and Arledge
 `lean/src/Main.lean` is byte-identical to the pinned mirror's
 (`leanprover-community/riemann-hypothesis` at `40e56bab`).
 
-We read and search this copy; we do not rebuild it. Reading notes go in this
-folder, next to `archive/` (which git ignores).
+For new Lean proof-reading studies use community `main` at a recorded commit. On 24 November its head was [`9282d3a1`](https://github.com/leanprover-community/riemann-hypothesis/blob/9282d3a102c4aff0e6026746db2a8990f5d9cddd/src/Main.lean#L43-L47). Follow the proof bodies from the target theorem. Use the archive above to reproduce release-era checks and resolve historical references.
+
+We use the archived release for reading and source searches without a local rebuild. Reading notes go in `lean/`, alongside the git-ignored `archive/` directory.
